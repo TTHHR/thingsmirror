@@ -1,6 +1,8 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar" />
+    <style name="AppTheme" parent="android:ThemeOverlay.Material.Dark">
+        <item name="android:fontFamily">@font/china</item>
+    </style>
 
 </resources>
