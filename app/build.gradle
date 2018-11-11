@@ -15,6 +15,10 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug{
+
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -24,10 +28,14 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
     testImplementation 'junit:junit:4.12'
-    compileOnly 'com.google.android.things:androidthings:+'
+    implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
+    implementation 'com.google.android.things:androidthings:+'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    compile 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.google.code.gson:gson:2.8.2'
     implementation files('libs/android-rome-feed-reader-1.0.0-r2.jar')
     implementation files('libs/jdom-1.1.1-android-fork.jar')
+    implementation files('libs/com.baidu.tts.jar')
+    implementation files('libs/bdasr_V3_20180320_9066860.jar')
 }
